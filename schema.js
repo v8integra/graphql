@@ -7,7 +7,7 @@ export const typeDefs = `#graphql
   type Review {
     id: ID!
     rating: Int!
-    ocntent: String!
+    content: String!
   }
   type Author {
     id: ID!
@@ -15,8 +15,8 @@ export const typeDefs = `#graphql
     verified: Boolean!
   }
   type Query {
-    reviews: [Reviews]
-    games: [Games]
-    authors: [Authors]
+    reviews: [Review]
+    games: [Game]
+    authors: [Author]
   }
 `
